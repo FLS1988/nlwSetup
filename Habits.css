@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  box-sizing: border-box;
+  background-color: #09090a;
+  /* checar o que significa display grid */
+  /* display: grid;
+  place-content: center; */
+  /* chegar o que significa VH */
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px red solid; */
+  padding: 48px;
+  position: fixed;
+  background-color: #09090a;
+  width: 100%;
+}
+header img:hover {
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  button div {
+    display: none;
+  }
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: #8b5cf6 1px solid;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+}
+button:hover {
+  box-shadow: 0px 10px 10px -5px #8b5cf6;
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+form {
+  display: flex;
+  padding: 180px 48px 48px 48px;
+  width: fit-content;
+}
+
+.habits {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 32px;
+  padding: 58px 0 0 0;
+}
+.habits div {
+  width: 64px;
+  height: 64px;
+  border-radius: 8%;
+}
+.days {
+  display: flex;
+  margin-left: 32px;
+  gap: 48px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  font-family: "Roboto Mono";
+  font-style: normal;
+}
+.day div {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 8%;
+  background: #18181b;
+}
+input:checked {
+  background: #a78bfa;
+  border-radius: 8%;
+  border: none;
+}
